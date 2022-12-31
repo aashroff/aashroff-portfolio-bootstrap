@@ -144,7 +144,16 @@ footer{
 .copyright{
 
     color: #ffffff;
+    
+
 }
+
+.contactForm{
+
+    border-top: 0.1em solid #ac7ac0;
+}
+
+/* Override Primary button color to Match theme. */
 
 
 @media screen and (max-width:768px) {
