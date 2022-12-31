@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500&family=Oswald:wght@300&display=swap');
+body{
+
+    background-color: rgb(12, 10, 27);
+}
+
+
+.navbar-custom {
+    /* background-image: url(../images/02-hero-bg.jpg);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; */
+    background-color: rgb(12, 10, 27);
+    border-bottom: 0.1em solid #ac7ac0;
+}
+
+.navbar-brand{
+
+    color:rgb(219, 219, 219);
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+.navbar-brand:hover{
+
+    color:#ac7ac0;
+}
+
+.nav-link{
+
+    color:rgb(172, 122, 192);
+}
+
+.nav-link:hover{
+
+    color:rgb(219, 219, 219);
+}
+
+.bg-light-custom{
+
+    background-image: linear-gradient(#1c142b, rgb(12, 10, 27));
+    color:white;
+    margin-top: 57.6px;
+    
+}
+
+.avatar > img {
+
+    max-width: 70%;
+    border-radius: 50%;
+    border-bottom: 0.2em #ac7ac0 solid;
+    mix-blend-mode: exclusion;
+
+}
+
+.avatar{
+
+    position: relative;
+    top: -20px;
+   
+}
+
+
+.bg-light-custom2{
+
+    background-color: #4f3b5675;
+    color:white
+}
+
+.bg-quote{
+
+    background-color: #1c142b8e;
+
+}
+
+.bg-quote> p{
+
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+
+.col-border{
+
+    border-right: #ac7ac0 0.2em solid;
+}
+
+.pb-2{
+
+    color:rgb(192, 192, 192);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    
+}
+
+
+h2 {
+    
+    text-transform: capitalize;
+    color: white;
+    font-size: 50px;
+  }
+
+h2::after {
+
+    content: attr(data-text);
+    display: flex;
+    justify-content: center;
+    /*  Rotates around x-axis */
+    transform: rotateX(180deg);
+    line-height: 0.85em;
+    /* linear-gradient defined by up,down,left ,right ,diagonal */
+    background-image: linear-gradient(0deg, #ffffff 0, transparent 95%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;         
+    opacity: 0.2;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+.col-work{
+
+    border-bottom: #ac7ac0 0.2em solid;
+}
+
+.card-body{
+
+    background-color: #1c142b;
+    
+}
+
+footer{
+
+    background-color: rgb(12, 10, 27);
+    border-top: 0.1em solid #ac7ac0;
+}
+
+.copyright{
+
+    color: #ffffff;
+}
+
+
+@media screen and (max-width:768px) {
+
+    .col-border{
+        border-right: none;
+        border-bottom: #ac7ac0 0.2em solid;
+    }
+    
+    
+}
