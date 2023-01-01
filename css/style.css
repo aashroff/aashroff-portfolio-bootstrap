@@ -98,7 +98,7 @@ body{
 
     background: #4f3b56c7;
     background-image: 
-    linear-gradient(180deg, rgba(48, 38, 108, 0.304), rgba(8, 5, 33, 0.881)),
+    linear-gradient(180deg, rgba(48, 38, 108, 0.304), rgba(24, 12, 41, 0.974)),
     url(../images/AdobeStock_276899893_edited.jpg); 
     background-position: bottom;
     background-repeat: no-repeat;
@@ -125,9 +125,9 @@ body{
 
 .pb-2{
 
-    color:rgb(192, 192, 192);
+    color:rgb(255, 255, 255);
     font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
+    font-weight: 400;
     font-style: italic;
     
 }
@@ -189,9 +189,10 @@ h3::after{
 }
 
 .card-body{
-
+    background: rgb(12, 10, 27);
     background-image: url(../images/AdobeStock_520024194_edited.jpg);
     background-size: cover;
+    background-blend-mode: color-dodge;
 }
 
 footer{
