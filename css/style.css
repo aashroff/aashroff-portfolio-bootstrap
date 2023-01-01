@@ -1,7 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500&family=Oswald:wght@300&display=swap');
 body{
 
-    background-color: rgb(12, 10, 27);
+    background: rgb(12, 10, 27);
+
+    background-image: 
+    url(../images/AdobeStock_447027159_edited.jpg),
+    linear-gradient(180deg,rgba(32, 12, 76, 0.579), rgba(134, 32, 71, 0.633));
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: color-dodge;
+    
+    
+   
+    
+    
 }
 
 
@@ -12,7 +26,7 @@ body{
     -webkit-background-clip: text;
     color: transparent; */
     background-color: rgb(12, 10, 27);
-    border-bottom: 0.1em solid #ac7ac0;
+    border-bottom: 0.1em solid #8c86a3;
 }
 
 .navbar-brand{
@@ -29,7 +43,7 @@ body{
 
 .nav-link{
 
-    color:rgb(172, 122, 192);
+    color:#8c86a3;
 }
 
 .nav-link:hover{
@@ -38,19 +52,36 @@ body{
 }
 
 .bg-light-custom{
-
-    background-image: linear-gradient(#1c142b, rgb(12, 10, 27));
+    background: 
+    /* linear-gradient(180deg,#1c142b7e, rgba(12, 10, 27, 0.7)), */
+    url(../images/AdobeStock_520024194_edited.jpg),
+    linear-gradient(180deg,rgba(75, 25, 108, 0.681), rgba(24, 19, 59, 0.336));
+    background-size: cover;
+    background-blend-mode:luminosity;
     color:white;
     margin-top: 57.6px;
     
 }
 
+.bg-light-contactMe{
+    background: 
+    linear-gradient(180deg,#1c142b7e, rgba(12, 10, 27, 0.7)),
+    url(../images/AdobeStock_520024194_edited.jpg),
+    linear-gradient(90deg, #1c142b, rgba(12, 10, 27, 0.5));
+    background-size: cover;
+    background-blend-mode:luminosity;
+    color:white;
+    margin-top: 57.6px;
+    
+}
+
+
 .avatar > img {
 
     max-width: 70%;
     border-radius: 50%;
-    border-bottom: 0.2em #ac7ac0 solid;
-    mix-blend-mode: exclusion;
+    border-bottom: 0.2em #8c86a3 solid;
+    z-index: 5;
 
 }
 
@@ -62,9 +93,16 @@ body{
 }
 
 
+
 .bg-light-custom2{
 
-    background-color: #4f3b5675;
+    background: #4f3b56c7;
+    background-image: 
+    linear-gradient(180deg, rgba(48, 38, 108, 0.304), rgba(8, 5, 33, 0.881)),
+    url(../images/AdobeStock_276899893_edited.jpg); 
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
     color:white
 }
 
@@ -82,7 +120,7 @@ body{
 
 .col-border{
 
-    border-right: #ac7ac0 0.2em solid;
+    border-right: #8c86a3 0.2em solid;
 }
 
 .pb-2{
@@ -118,27 +156,48 @@ h2::after {
     opacity: 0.2;
 }
 
+h3::after{
+
+    content: attr(data-text);
+    display: flex;
+    justify-content:left;
+    /*  Rotates around x-axis */
+    transform: rotateX(180deg);
+    line-height: 0.85em;
+    /* linear-gradient defined by up,down,left ,right ,diagonal */
+    background-image: linear-gradient(0deg, #ffffff 0, transparent 95%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;         
+    opacity: 0.2;
+}
+
 .card-img-top {
     width: 100%;
     height: 15vw;
     object-fit: cover;
 }
 
+.card{
+
+    width:auto;
+}
+
 .col-work{
 
-    border-bottom: #ac7ac0 0.2em solid;
+    border-bottom: #8c86a3 0.2em solid;
 }
 
 .card-body{
 
-    background-color: #1c142b;
-    
+    background-image: url(../images/AdobeStock_520024194_edited.jpg);
+    background-size: cover;
 }
 
 footer{
 
     background-color: rgb(12, 10, 27);
-    border-top: 0.1em solid #ac7ac0;
+    border-top: 0.1em solid #8c86a3;
 }
 
 .copyright{
@@ -150,17 +209,35 @@ footer{
 
 .contactForm{
 
-    border-top: 0.1em solid #ac7ac0;
+    border-top: 0.1em solid #8c86a3;
 }
 
 /* Override Primary button color to Match theme. */
 
+.btn-primary{
+
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #145d7c;
+    --bs-btn-border-color: #c8c1c8;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #0b5ed7;
+    --bs-btn-hover-border-color: #0a58ca;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #0a58ca;
+    --bs-btn-active-border-color: #0a53be;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #0d6efd;
+    --bs-btn-disabled-border-color: #0d6efd;
+
+}
 
 @media screen and (max-width:768px) {
 
     .col-border{
         border-right: none;
-        border-bottom: #ac7ac0 0.2em solid;
+        border-bottom: #8c86a3 0.2em solid;
     }
     
     
